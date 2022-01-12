@@ -4,8 +4,25 @@ import './styles.css';
 
 const Pagination = () => {
 
-    const [isArrowLeftDisabled, setArrowLeftDisabled] = useState(true);
-    const [isArrowRightDisabled, setArrowRightDisabled] = useState(false);
+    const [isArrowLeftDisabled, setArrowLeft] = useState(true);
+    const [isArrowRightDisabled, setArrowRight] = useState(false);
+
+    const disableArrowLeft = () => {
+        setArrowLeft(false);
+    }
+
+    const enableArrowLeft = () => {
+        setArrowLeft(true);
+    }
+
+    const disableArrowRight = () => {
+        setArrowRight(false);
+    }
+
+    const enableArrowRight = () => {
+        setArrowRight(true);
+    }
+
 
     return (
         <div className="dsmovie-pagination-container">
