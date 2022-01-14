@@ -37,7 +37,6 @@ const Form = () => {
                 <Link to="/">
                     <button className="btn btn-primary dsmovie-btn mt-3">Cancelar</button>
                 </Link>
-                
             </div >
         </div >
     );
